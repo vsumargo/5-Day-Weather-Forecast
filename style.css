@@ -196,3 +196,15 @@ h3{
 .wind-1,.wind-2,.wind-3,.wind-4,.wind-5{
     font-size: 0.8rem;
 }
+
+#error-code{
+    font-size: 4rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+#error-description{
+    font-size: 3rem;
+    font-weight: 400;
+    text-align: center;
+}
