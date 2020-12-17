@@ -38,19 +38,19 @@ The following image shows the three pages appearance:
 
 1. 5 Day Weather Forecast full page
 
-![screenshot of 5 Day Weather Forecast](Images/full-page-calendar-and-daily-planner.png)
+![screenshot of 5 Day Weather Forecast](Images/5-day-weather-forecast-fullpage-screenshot.png)
 
 2. Search History
 
-![screenshot of search history](Images/time-block-and-current-time.png)
+![screenshot of search history](Images/search-history.png)
 
 
 #### Links
 The following links will take you to the source code in github repository and the deployed live page:
 
-* [5 Day Weather Forecast](https://vsumargo.github.io/DailyPlanner/)
+* [5 Day Weather Forecast](https://vsumargo.github.io/5-Day-Weather-Forecast/)
 
-* [5 Day Weather Forecast GitHub Source Code](https://github.com/vsumargo/DailyPlanner)
+* [5 Day Weather Forecast GitHub Source Code](https://github.com/vsumargo/5-Day-Weather-Forecast)
 
 ## Acknowledgements
 
