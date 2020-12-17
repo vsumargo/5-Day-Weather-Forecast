@@ -394,7 +394,13 @@ $(document).ready(function(){
             displaySearchHistory();
 
         }).catch(function(error){
-            console.log(error);
+            $('#city-input').val("");
+            $('#country-input').val("");
+            $('.container').css('display','none');
+            $('.error').css('display','block');
+            $('#error-code').text(error.responseJSON.cod);
+            $('#error-description').text(error.responseJSON.message.toUpperCase());
+            displaySearchHistory();
         })
     }
 
@@ -418,6 +424,10 @@ $(document).ready(function(){
     $('#search-button').on('click',function(event){
         event.preventDefault();
         console.log(event);
+        $('.container').removeAttr('style');
+        $('#error-code').text("");
+        $('#error-description').text("");
+        $('.error').css('display','none');
         cityName = $('#city-input').val();
         if($('#country-input').val().length <= 2){
             countryCode = $('#country-input').val();
@@ -432,6 +442,10 @@ $(document).ready(function(){
 
     $('#last-search-cities').on('click', function(event){
         console.log(event);
+        $('.container').removeAttr('style');
+        $('#error-code').text("");
+        $('#error-description').text("");
+        $('.error').css('display','none');
         lastCityForecast(event);
         
     });
@@ -440,7 +454,10 @@ $(document).ready(function(){
         console.log(event);
         window.localStorage.clear();
         $('li').remove();
-        
+        $('.container').removeAttr('style');
+        $('#error-code').text("");
+        $('#error-description').text("");
+        $('.error').css('display','none');
     });
     
     displaySearchHistory();
